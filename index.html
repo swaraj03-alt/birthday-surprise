@@ -1,33 +1,72 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#8f2d0d">
-<title>For Demo ♡</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="A little birthday surprise made with love for Kashu.">
+<title>Happy Birthday Kashu ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Sacramento&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <button class="music" id="musicBtn">♫ <span>Music off</span></button>
 <div class="progress" id="progress"></div>
+
 <main>
+
 <!-- PASSCODE -->
 <section class="page active" id="lockPage">
  <div class="lock-layout">
+
   <div class="lock-art">
-   <div class="paper-heart"><span>♡</span><div class="bear bear-white"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="blush l"></i><i class="blush r"></i><b>♥</b></div><div class="bear bear-tan"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="blush l"></i><i class="blush r"></i><b>♡</b></div><small>HAPPY BIRTHDAY</small></div>
-   <div class="ribbon"></div><div class="tiny-note">a little surprise<br>made with love</div>
-  </div>
-  <div class="keypad-panel">
-   <p class="script">A tiny secret for you</p><h1>Enter a passcode</h1>
-   <div class="pin-dots" id="pinDots"><i></i><i></i><i></i><i></i></div>
-   <div class="keypad" id="keypad">
-    <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
-    <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
-    <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
-    <button data-key="clear">*</button><button data-key="0">0</button><button data-key="delete">#</button>
+   <div class="paper-heart">
+    <span>♡</span>
+    <div class="bear bear-white">
+     <i class="ear l"></i><i class="ear r"></i>
+     <i class="eye l"></i><i class="eye r"></i>
+     <i class="nose"></i><i class="blush l"></i><i class="blush r"></i><b>♥</b>
+    </div>
+    <div class="bear bear-tan">
+     <i class="ear l"></i><i class="ear r"></i>
+     <i class="eye l"></i><i class="eye r"></i>
+     <i class="nose"></i><i class="blush l"></i><i class="blush r"></i><b>♡</b>
+    </div>
+    <small>HAPPY BIRTHDAY KASHU</small>
    </div>
+   <div class="ribbon"></div>
+   <div class="tiny-note">a little surprise<br>made with love</div>
+  </div>
+
+  <div class="keypad-panel">
+   <p class="script">A tiny secret for you, Kashu ♡</p>
+   <h1>Enter a passcode</h1>
+
+   <div class="pin-dots" id="pinDots">
+    <i></i><i></i><i></i><i></i>
+   </div>
+
+   <div class="keypad" id="keypad">
+    <button data-key="1">1</button>
+    <button data-key="2">2</button>
+    <button data-key="3">3</button>
+    <button data-key="4">4</button>
+    <button data-key="5">5</button>
+    <button data-key="6">6</button>
+    <button data-key="7">7</button>
+    <button data-key="8">8</button>
+    <button data-key="9">9</button>
+    <button data-key="clear">*</button>
+    <button data-key="0">0</button>
+    <button data-key="delete">#</button>
+   </div>
+
    <p class="key-hint">A four-digit code opens your little world ♡</p>
   </div>
  </div>
@@ -35,107 +74,348 @@
 
 <!-- WRONG PASSCODE -->
 <section class="page wrong-page" id="wrongPage">
- <div class="wrong-content"><h1>WRONG PASSCODE</h1>
-  <div class="door-art"><div class="door-leaf"></div><div class="peek-bear"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i></div><div class="knob"></div></div>
-  <button class="try-btn" id="tryAgain">↻ TRY AGAIN</button><p>Oops! That isn't the secret code.</p>
+ <div class="wrong-content">
+  <h1>WRONG PASSCODE</h1>
+  <div class="door-art">
+   <div class="door-leaf"></div>
+   <div class="peek-bear">
+    <i class="ear l"></i><i class="ear r"></i>
+    <i class="eye l"></i><i class="eye r"></i>
+    <i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i>
+   </div>
+   <div class="knob"></div>
+  </div>
+  <button class="try-btn" id="tryAgain">↻ TRY AGAIN</button>
+  <p>Oops! That's not the secret code, Kashu.</p>
  </div>
 </section>
 
-<!-- THREE GIFT CHARACTERS -->
+<!-- THREE GIFTS -->
 <section class="page gifts-page" id="giftsPage">
- <div class="chapter-top"><span>✦ A BIRTHDAY SURPRISE ✦</span><span>01 / 04</span></div>
- <h1 class="big-heading">CLICK ON GIFTS TO OPEN</h1>
- <p class="subheading">Three gifts. Three little worlds. All for you.</p>
- <div class="characters">
-  <button class="character-card" data-open="birthdayPage" aria-label="Open birthday gift">
-   <div class="bear-scene"><div class="bear-body"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i><div class="mini-cake">🎂</div><i class="foot l"></i><i class="foot r"></i></div></div>
-   <strong>Gift 01</strong><small>Birthday · cake · memories</small>
-  </button>
-  <button class="character-card" data-open="letterPage" aria-label="Open make a wish gift">
-   <div class="bear-scene"><div class="bear-body tan"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i><div class="camera-icon">📷</div><i class="foot l"></i><i class="foot r"></i></div></div>
-   <strong>Gift 02</strong><small>A love letter</small>
-  </button>
-  <button class="character-card" data-open="finalPage" aria-label="Open memories gift">
-   <div class="bear-scene"><div class="bear-body"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i><div class="envelope">♥</div><i class="foot l"></i><i class="foot r"></i></div></div>
-   <strong>Gift 03</strong><small>The final surprise</small>
-  </button>
+
+ <div class="chapter-top">
+  <span>✦ A BIRTHDAY SURPRISE FOR KASHU ✦</span>
+  <span>01 / 04</span>
  </div>
- <div class="bottom-note">Gift 1: three pages · Gift 2: a letter · Gift 3: the ending <span>♡</span></div>
+
+ <h1 class="big-heading">A LITTLE WORLD MADE FOR YOU</h1>
+ <p class="subheading">Three gifts. Three little worlds. All for you, Kashu ♡</p>
+
+ <div class="characters">
+
+  <button class="character-card" data-open="birthdayPage" aria-label="Open birthday gift">
+   <div class="bear-scene">
+    <div class="bear-body">
+     <i class="ear l"></i><i class="ear r"></i>
+     <i class="eye l"></i><i class="eye r"></i>
+     <i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i>
+     <div class="mini-cake">🎂</div>
+     <i class="foot l"></i><i class="foot r"></i>
+    </div>
+   </div>
+   <strong>Gift 01</strong>
+   <small>Birthday · cake · memories</small>
+  </button>
+
+  <button class="character-card" data-open="letterPage" aria-label="Open love letter">
+   <div class="bear-scene">
+    <div class="bear-body tan">
+     <i class="ear l"></i><i class="ear r"></i>
+     <i class="eye l"></i><i class="eye r"></i>
+     <i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i>
+     <div class="camera-icon">📷</div>
+     <i class="foot l"></i><i class="foot r"></i>
+    </div>
+   </div>
+   <strong>Gift 02</strong>
+   <small>A letter from my heart</small>
+  </button>
+
+  <button class="character-card" data-open="finalPage" aria-label="Open final surprise">
+   <div class="bear-scene">
+    <div class="bear-body">
+     <i class="ear l"></i><i class="ear r"></i>
+     <i class="eye l"></i><i class="eye r"></i>
+     <i class="nose"></i><i class="cheek l"></i><i class="cheek r"></i>
+     <div class="envelope">♥</div>
+     <i class="foot l"></i><i class="foot r"></i>
+    </div>
+   </div>
+   <strong>Gift 03</strong>
+   <small>The final surprise</small>
+  </button>
+
+ </div>
+
+ <div class="bottom-note">
+  Made especially for you, Kashu <span>♡</span>
+ </div>
 </section>
 
 <!-- BIRTHDAY INTRO -->
 <section class="page scrapbook-page" id="birthdayPage">
- <div class="scrap-header"><span>HAPPY BIRTHDAY, MY LOVE ♡</span><span>01 — THE DAY IS YOURS</span></div>
+
+ <div class="scrap-header">
+  <span>HAPPY BIRTHDAY, KASHU ♡</span>
+  <span>01 — THE DAY IS YOURS</span>
+ </div>
+
  <div class="birthday-grid">
-  <div class="side-note left-note"><p>Happy birthday to the one who puts up with all my craziness and somehow always makes me feel loved. From your little surprises to the way you say yes to my crazy ideas, it's the little things that make you special to me.</p><span>♡ always & forever</span></div>
+
+  <div class="side-note left-note">
+   <p>
+    Happy birthday to someone who makes ordinary moments
+    feel special. Your smile, your little habits and all
+    the memories we share make you truly unforgettable.
+   </p>
+   <span>♡ always & forever</span>
+  </div>
+
   <div class="camera-frame">
-   <div class="camera-top"><span>◉</span><span>♡  •  ✦</span><span>▱</span></div>
-   <div class="photo-window"><img src="assets/photos/demo-photo.jpg" alt="Add your favourite photo of her" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="photo-fallback">♡<small>ADD HER PHOTO HERE</small></div></div>
-   <div class="camera-controls"><span>◉</span><span>●</span><span>▣</span></div>
+   <div class="camera-top">
+    <span>◉</span><span>♡ • ✦</span><span>▱</span>
+   </div>
+
+   <div class="photo-window">
+    <img src="demo-photo.jpg" alt="Kashu's birthday photograph"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="photo-fallback">
+     ♡<small>YOUR SPECIAL PHOTO</small>
+    </div>
+   </div>
+
+   <div class="camera-controls">
+    <span>◉</span><span>●</span><span>▣</span>
+   </div>
    <div class="camera-caption">our favourite person</div>
   </div>
-  <div class="side-note right-note"><p>I'm so lucky that I get to call you my favourite person. Here's to a lifetime of birthday cakes, crazy ideas, and making memories together.</p><span>Love you, Demo ♡</span></div>
+
+  <div class="side-note right-note">
+   <p>
+    Here's to beautiful days, endless laughter,
+    unforgettable memories and everything your
+    heart wishes for. You deserve all the happiness.
+   </p>
+   <span>With love, always ♡</span>
+  </div>
+
  </div>
- <div class="birthday-title"><span>happy</span><b>Birthday</b><i>to my favourite human</i></div>
+
+ <div class="birthday-title">
+  <span>happy</span>
+  <b>Birthday</b>
+  <i>to my favourite human, Kashu</i>
+ </div>
+
  <button class="next-arrow" data-next="wishPage" aria-label="Next page">»</button>
  <button class="back-link" data-next="giftsPage">← back to gifts</button>
+
 </section>
 
 <!-- CAKE WISH -->
 <section class="page scrapbook-page wish-page" id="wishPage">
- <div class="scrap-header"><span>MAKE A WISH ✦</span><span>02 — YOUR SPECIAL DAY</span></div>
+
+ <div class="scrap-header">
+  <span>MAKE A WISH ✦</span>
+  <span>02 — YOUR SPECIAL DAY</span>
+ </div>
+
  <div class="wish-layout">
-  <div class="wish-left"><h1>MAKE<br>A WISH</h1><p class="hand">blow your candle</p><div class="curved-arrow">♡ ⤵</div><p class="small-copy">I pray you get everything your heart dreams of. And selfishly, I wish to be beside you for every little celebration.</p></div>
-  <button class="cake-button" id="cakeButton" aria-label="Tap the cake to blow out the candle">
-   <div class="cake-flame" id="cakeFlame"></div><div class="cake-candle"></div>
-   <div class="strawberries">🍓　🍓　🍓</div><div class="cream-top"></div><div class="cake-body-art"><span>♡</span><span>✿</span><span>♡</span></div><div class="cake-plate-art"></div>
+
+  <div class="wish-left">
+   <h1>MAKE<br>A WISH</h1>
+   <p class="hand">blow your candle</p>
+   <div class="curved-arrow">♡ ⤵</div>
+   <p class="small-copy">
+    May all your dreams come true, Kashu.
+    May life give you endless reasons to smile.
+   </p>
+  </div>
+
+  <button class="cake-button" id="cakeButton"
+   aria-label="Tap the cake to blow out the candle">
+   <div class="cake-flame" id="cakeFlame"></div>
+   <div class="cake-candle"></div>
+   <div class="strawberries">🍓　🍓　🍓</div>
+   <div class="cream-top"></div>
+   <div class="cake-body-art">
+    <span>♡</span><span>✿</span><span>♡</span>
+   </div>
+   <div class="cake-plate-art"></div>
    <small>tap the cake to blow out the candle</small>
   </button>
-  <div class="wish-right"><p>Your smile is my favourite thing, and loving you is my favourite part of life. All our little moments, the day you made me yours, I choose you in every lifetime.</p><div class="star-balloons">✧　☆　✧</div></div>
+
+  <div class="wish-right">
+   <p>
+    Never stop smiling, dreaming and being the wonderful
+    person you are. Today is all about you, Kashu!
+   </p>
+   <div class="star-balloons">✧ ☆ ✧</div>
+  </div>
+
  </div>
- <p class="wish-feedback" id="wishFeedback">Make a wish, then tap the cake ♡</p>
+
+ <p class="wish-feedback" id="wishFeedback">
+  Make a wish, then tap the cake ♡
+ </p>
+
  <button class="next-arrow" data-next="memoryPage" aria-label="Next page">»</button>
  <button class="back-link" data-next="giftsPage">← back to gifts</button>
+
 </section>
 
 <!-- MEMORY GALLERY -->
 <section class="page scrapbook-page memory-page" id="memoryPage">
- <div class="scrap-header"><span>OUR LITTLE UNIVERSE ♡</span><span>03 — THE MEMORIES</span></div>
- <h1 class="memory-title">little moments, <em>big memories</em></h1>
- <div class="string-line"></div>
- <div class="hanging-photos">
-  <figure class="polaroid p1"><span class="clip"></span><div class="memory-photo"><img src="assets/photos/memory-1.jpg" alt="Memory one" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>♡<small>ADD PHOTO 01</small></span></div><figcaption>my favourite day</figcaption></figure>
-  <figure class="polaroid p2"><span class="clip"></span><div class="memory-photo"><img src="assets/photos/memory-2.jpg" alt="Memory two" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>✿<small>ADD PHOTO 02</small></span></div><figcaption>your pretty smile</figcaption></figure>
-  <figure class="polaroid p3"><span class="clip"></span><div class="memory-photo"><img src="assets/photos/memory-3.jpg" alt="Memory three" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>☼<small>ADD PHOTO 03</small></span></div><figcaption>just us being us</figcaption></figure>
-  <figure class="polaroid p4"><span class="clip"></span><div class="memory-photo"><img src="assets/photos/memory-4.jpg" alt="Memory four" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>♡<small>ADD PHOTO 04</small></span></div><figcaption>one to remember</figcaption></figure>
+
+ <div class="scrap-header">
+  <span>OUR LITTLE UNIVERSE ♡</span>
+  <span>03 — THE MEMORIES</span>
  </div>
- <div class="memory-doodles">♡　✧　✿　♡　✧　love　♡</div>
+
+ <h1 class="memory-title">little moments, <em>big memories</em></h1>
+
+ <div class="string-line"></div>
+
+ <div class="hanging-photos">
+
+  <figure class="polaroid p1">
+   <span class="clip"></span>
+   <div class="memory-photo">
+    <img src="memory-1.jpg" alt="Kashu memory one"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <span>♡<small>MEMORY 01</small></span>
+   </div>
+   <figcaption>my favourite day</figcaption>
+  </figure>
+
+  <figure class="polaroid p2">
+   <span class="clip"></span>
+   <div class="memory-photo">
+    <img src="memory-2.jpg" alt="Kashu memory two"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <span>✿<small>MEMORY 02</small></span>
+   </div>
+   <figcaption>your pretty smile</figcaption>
+  </figure>
+
+  <figure class="polaroid p3">
+   <span class="clip"></span>
+   <div class="memory-photo">
+    <img src="memory-3.jpg" alt="Kashu memory three"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <span>☼<small>MEMORY 03</small></span>
+   </div>
+   <figcaption>beautiful moments</figcaption>
+  </figure>
+
+  <figure class="polaroid p4">
+   <span class="clip"></span>
+   <div class="memory-photo">
+    <img src="memory-4.jpg" alt="Kashu memory four"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <span>♡<small>MEMORY 04</small></span>
+   </div>
+   <figcaption>one to remember</figcaption>
+  </figure>
+
+ </div>
+
+ <div class="memory-doodles">♡ ✧ ✿ ♡ ✧ love ♡</div>
+
  <button class="back-link" data-next="giftsPage">← back to gifts</button>
 </section>
 
-<!-- LETTER -->
+<!-- LOVE LETTER -->
 <section class="page letter-page" id="letterPage">
- <div class="letter-sheet"><div class="letter-tape"></div><div class="letter-copy">
-  <span class="tiny-label">A LETTER FROM MY HEART</span>
-  <h1>To the love of my life…</h1>
-  <p>To the woman who has stolen my heart (and never returned it ♡), happy birthday, baby. There are no amount of words that can tell you how I feel, no amount of time is ever enough with you.</p>
-  <p>You feel like home. You make my world feel softer, safer and real. I still believe that good knew I needed you. Someone who sees me fully and still chooses me.</p>
-  <p>You've shown me the kind of love that makes me want to become a better person. I hope you know how much I appreciate everything you do for me, every day, no matter how tired you are.</p>
-  <p>And I hope in every smile, every laugh and every moment together you feel my love and know just how much you mean to me.</p>
-  <p class="sign">I love you, Demo ♡<br><small>(today, tomorrow & all the days after)</small></p>
- </div><div class="letter-photo"><img src="assets/photos/letter-photo.jpg" alt="A favourite portrait" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>♡<small>ADD A PHOTO</small></span><div class="flower">✿</div></div></div>
- <button class="finish-btn" id="finishBtn">one last surprise →</button><button class="back-link letter-back" data-next="giftsPage">← back to gifts</button>
+
+ <div class="letter-sheet">
+
+  <div class="letter-tape"></div>
+
+  <div class="letter-copy">
+   <span class="tiny-label">A LETTER FROM MY HEART</span>
+
+   <h1>Dear Kashu… ♡</h1>
+
+   <p>
+    Happy birthday, Kashu! Today is a special day because
+    the world was blessed with someone as wonderful as you.
+    I hope this little surprise brings a beautiful smile
+    to your face.
+   </p>
+
+   <p>
+    Some people make life brighter just by being themselves.
+    Your smile, your kindness and the little things that
+    make you who you are deserve to be celebrated.
+   </p>
+
+   <p>
+    I hope this new year of your life brings you happiness,
+    good health, exciting opportunities and countless
+    beautiful memories.
+   </p>
+
+   <p>
+    Keep smiling, keep dreaming and never forget how
+    special you are. You deserve the very best that
+    life has to offer.
+   </p>
+
+   <p class="sign">
+    With lots of love, Kashu ♡<br>
+    <small>today, tomorrow & all the days after</small>
+   </p>
+  </div>
+
+  <div class="letter-photo">
+   <img src="letter-photo.jpg" alt="Kashu's portrait"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+   <span>♡<small>A SPECIAL MEMORY</small></span>
+   <div class="flower">✿</div>
+  </div>
+
+ </div>
+
+ <button class="finish-btn" id="finishBtn">one last surprise →</button>
+ <button class="back-link letter-back" data-next="giftsPage">← back to gifts</button>
+
 </section>
 
-<!-- FINAL -->
+<!-- FINAL SURPRISE -->
 <section class="page final-page" id="finalPage">
- <div class="final-heart">♥</div><p class="final-small">FOR THE REST OF YOUR LIFE</p>
- <h1>I WANT TO ANNOY YOU</h1><p class="final-script">for the rest of your life</p>
- <div class="final-bears"><span>🐻‍❄️💗🐻</span></div>
- <p class="final-bottom">Happy birthday, my favourite person.<br>Here's to forever and all the little things in between. ♡</p>
- <button class="replay-btn" id="replayBtn">↶ relive your surprise</button><button class="back-link final-back" data-next="giftsPage">← back to gifts</button>
+
+ <div class="final-heart">♥</div>
+
+ <p class="final-small">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+
+ <h1>YOU DESERVE ALL THE HAPPINESS</h1>
+
+ <p class="final-script">Happy Birthday, Kashu ♡</p>
+
+ <div class="final-bears">
+  <span>🐻‍❄️💗🐻</span>
+ </div>
+
+ <p class="final-bottom">
+  Happy birthday, Kashu!<br>
+  May your life always be filled with love,
+  laughter and beautiful little moments. ♡
+ </p>
+
+ <button class="replay-btn" id="replayBtn">↶ relive your surprise</button>
+
+ <button class="back-link final-back" data-next="giftsPage">
+  ← back to gifts
+ </button>
+
 </section>
+
 </main>
+
 <div class="toast" id="toast"></div>
-<script src="js/script.js"></script>
-</body></html>
+
+<script src="script.js"></script>
+
+</body>
+</html>
